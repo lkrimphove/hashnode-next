@@ -11,15 +11,37 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata() {
-  const title = "hashnode-next";
-  const description = "The fastest way to go headless with Hashnode";
-  const images = "https://hashnode-next.dev/opengraph-image.png";
-  const url = "https://hashnode-next.dev";
+  const title = "Lukas Krimphove";
+  const description =
+    "I‘m working as a software engineer and consultant and love to do all kinds of tech projects in my spare time. I'm always up for a coding adventure and I love to share those adventures with you.";
+
+  const images = "";
+  const url = "https://www.krimphove.site";
+  const keywords = [
+    "lukas",
+    "krimphove",
+    "lukas krimphove",
+    "munich",
+    "germany",
+    "software",
+    "engineer",
+    "engineering",
+    "developer",
+    "programming",
+    "cloud",
+    "data science",
+    "aws",
+    "sap",
+    "python",
+    "javascript",
+    "flutter",
+  ];
 
   const metadata: Metadata = {
-    metadataBase: new URL("https://hashnode-next.dev"),
+    metadataBase: new URL(url),
     title,
     description,
+    keywords,
     openGraph: {
       title,
       description,
@@ -33,8 +55,8 @@ export async function generateMetadata() {
       title,
       description,
       images,
-      creator: "@thealexkates",
-      site: "@thealexkates",
+      creator: "@lukaskrimphove",
+      site: "@lukaskrimphove",
     },
   };
 

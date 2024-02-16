@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
       title,
       description,
       type: "article",
-      siteName: "Alex Kates | Blog",
+      siteName: "Lukas Krimphove | Blog",
       images,
     },
     twitter: {
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props) {
       title,
       description,
       images,
-      creator: "@thealexkates",
+      creator: "@lukaskrimphove",
     },
   };
 
