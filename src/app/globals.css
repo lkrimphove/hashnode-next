@@ -56,4 +56,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  code {
+    @apply rounded-md;
+  }
+  h1, h2, h3 {
+    @apply dark:text-[#237F52] text-[#237F52];
+  }
 }

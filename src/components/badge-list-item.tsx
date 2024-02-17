@@ -17,7 +17,7 @@ export default function BadgeListItem({ badge }: Props) {
           <CardTitle>{badge.name}</CardTitle>
           <CardDescription>{new Date(badge.dateAssigned!).toLocaleDateString()}</CardDescription>
         </CardHeader>
-        <CardContent className="flex justify-center">
+        <CardContent className="flex justify-left">
           <span className="min-h-16 text-sm">{badge.description}</span>
         </CardContent>
       </Card>

@@ -21,6 +21,9 @@ export default async function Page({
 
   return (
     <main className="mb-8 flex flex-col gap-y-4">
+      <section className={cn(fadeIn, "animation-delay-200 mb-8 flex flex-col gap-1")}>
+        <h1 className="text-3xl font-bold">Blog</h1>
+      </section>
       <section className={cn(fadeIn, "animation-delay-200 flex gap-x-2")}>
         <Search placeholder="Search blog posts..." />
         <Sort />

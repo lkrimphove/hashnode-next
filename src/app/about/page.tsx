@@ -8,6 +8,9 @@ import { Suspense } from "react";
 export default async function Home() {
   return (
     <main className="flex flex-col gap-2">
+      <section className={cn(fadeIn, "animation-delay-200 mb-8 flex flex-col gap-1")}>
+        <h1 className="text-3xl font-bold">About</h1>
+      </section>
       <section className={cn(fadeIn, "animation-delay-200")}>
         <Suspense fallback={<ParagraphSkeleton />}>
           <Bio />
@@ -15,7 +18,7 @@ export default async function Home() {
       </section>
       <section className={cn(fadeIn, "animation-delay-400 flex flex-col gap-2")}>
         <Suspense fallback={<CardListSkeleton />}>
-          <span>Here are some Hashnode badges that I&apos;ve earned</span>
+          <span>Here are some Hashnode badges that I&apos;ve earned:</span>
           <BadgeList />
         </Suspense>
       </section>

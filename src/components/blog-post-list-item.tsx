@@ -9,10 +9,10 @@ type Props = {
 export default function BlogPostListItem({ post }: Props) {
   return (
     <li>
-      <div className="flex flex-col prose prose-neutral dark:prose-invert gap-2">
+      <div className="mb-8 flex flex-col gap-2">
         <div>
           <Link href={`/blog/${post.slug}`}>
-            <span className="text-lg">{post.title}</span>
+            <h1 className="text-lg">{post.title}</h1>
           </Link>
           <div className="flex items-center text-sm">
             <span>{new Date(post.publishedAt).toLocaleDateString()}</span>

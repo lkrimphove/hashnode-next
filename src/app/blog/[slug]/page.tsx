@@ -49,7 +49,9 @@ export default async function Page({ params }: Props) {
     publishedAt,
     readTimeInMinutes,
     title,
+    coverImage,
     views,
+    reactionCount,
     id,
     publication,
     content: { markdown },
@@ -57,11 +59,12 @@ export default async function Page({ params }: Props) {
 
   return (
     <main>
-      <section className={cn(fadeIn, "animation-delay-200 mb-8 flex flex-col gap-1")}>
+      <section className={cn(fadeIn, "animation-delay-200 mb-8 flex flex-col gap-y-4")}>
         <h1 className="text-3xl font-bold">{title}</h1>
-        <h3 className="text-xs font-light">
-          {new Date(publishedAt).toLocaleDateString()} • {views} views • {readTimeInMinutes} min read
-        </h3>
+        <h4 className="text-xs font-light">
+          {new Date(publishedAt).toLocaleDateString()} • {views} views • {readTimeInMinutes} min read • {reactionCount} likes
+        </h4>
+        {coverImage && <img alt={title} src={coverImage.url} className="rounded-md" />}
       </section>
       <article className={cn(fadeIn, "animation-delay-400")}>
         <Mdx code={markdown} />
