@@ -13,7 +13,7 @@ export default function FeaturedBlogPostListItem({ post }: Props) {
 
   return (
     <li className={cn("flex flex-col items-center", fadeIn)}>
-      <Link href={post.url} target="_blank">
+      <Link href={`/blog/${post.slug}`}>
         <Card className="flex flex-col transition-transform duration-300 ease-in-out hover:scale-[1.025]">
           <CardHeader>
             <CardTitle>{post.title}</CardTitle>
