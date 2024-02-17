@@ -1,6 +1,7 @@
 fragment Post on Post {
   id
   title
+  canonicalUrl
   subtitle
   seo {
     title
