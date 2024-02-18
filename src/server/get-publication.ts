@@ -1,5 +1,5 @@
 import url from "@/hashnode/api-url";
-import { GetPublicationDocument } from "@/hashnode/generated/graphql";
+import { GetPublicationDocument, Publication } from "@/hashnode/generated/graphql";
 import request from "graphql-request";
 
 export default async function getPublication() {
@@ -11,5 +11,5 @@ export default async function getPublication() {
     },
   });
 
-  return publication;
+  return publication as Publication;
 }

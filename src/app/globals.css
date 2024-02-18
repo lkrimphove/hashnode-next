@@ -59,7 +59,9 @@
   code {
     @apply rounded-md;
   }
-  h1, h2, h3 {
-    @apply dark:text-[#237F52] text-[#237F52];
+  h1,
+  h2,
+  h3 {
+    @apply text-[#237F52] dark:text-[#237F52];
   }
 }

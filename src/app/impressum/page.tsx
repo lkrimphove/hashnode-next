@@ -1,4 +1,3 @@
-import { cn, fadeIn } from "@/lib/utils";
 import getImprint from "@/server/get-imprint";
 
 export default async function Home() {
