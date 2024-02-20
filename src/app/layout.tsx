@@ -4,6 +4,7 @@ import Providers from "@/components/providers";
 import Scripts from "@/components/scripts";
 import { Toaster } from "@/components/ui/toaster";
 import { validateEnvVars } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import { Metadata } from "next/types";
 import "./globals.css";
@@ -82,6 +83,7 @@ export default function RootLayout({
           </Providers>
         </div>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
