@@ -107,4 +107,10 @@ fragment Publication on Publication {
     fathomCustomDomainEnabled
     plausibleAnalyticsEnabled
   }
+  sponsorship {
+    content {
+      html
+      markdown
+    }
+  }
 }

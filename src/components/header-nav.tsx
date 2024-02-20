@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import getPublication from "@/server/get-publication";
 import { SortTypes } from "@/types/sort-types";
 import { usePathname } from "next/navigation";
 
@@ -13,10 +14,6 @@ export function HeaderNav() {
 
   const blogSearchParams = new URLSearchParams();
   blogSearchParams.set("sort", SortTypes.Date);
-
-  const qotdSearchParams = new URLSearchParams();
-  qotdSearchParams.set("tags", "inspirational,famous-quotes");
-  qotdSearchParams.set("limit", "1");
 
   const navs = [
     {
@@ -30,6 +27,10 @@ export function HeaderNav() {
     {
       href: "/projects",
       label: "projects",
+    },
+    {
+      href: "/support",
+      label: "support me",
     },
     {
       href: "/about",
